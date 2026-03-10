@@ -21,10 +21,23 @@
 - **MCP**: `@playwright/mcp` — Playwright MCP server for browser automation via MCP protocol
 - **Runtime**: Node.js 20, npm
 
+## UI/UX Skills (ui-ux-pro-max)
+
+Installed from `nextlevelbuilder/ui-ux-pro-max-skill`. Provides design intelligence via `.claude/skills/`:
+
+- **banner-design** — Banner sizes, styles, and layout patterns
+- **brand** — Brand guidelines, color palettes, typography, voice framework, with helper scripts
+- **design** — CIP deliverables, icon/logo design, design references
+- **design-system** — AI-powered design system generation
+- **slides** — Presentation/slide design
+- **ui-styling** — UI styling patterns and techniques
+- **ui-ux-pro-max** — Master skill combining all UI/UX capabilities
+
 ## Project Structure
 
 ```
-tests/           — Playwright test files (*.spec.ts)
+tests/              — Playwright test files (*.spec.ts)
+.claude/skills/     — UI/UX Pro Max skill files
 playwright.config.ts — Playwright configuration
 ```
 
