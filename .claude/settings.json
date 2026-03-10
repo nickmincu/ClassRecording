@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json-schemastore.org/claude-code-settings.json",
   "hooks": {
     "SessionStart": [
       {
@@ -7,7 +8,30 @@
             "type": "command",
             "command": "node .claude/hooks/gsd-check-update.js"
           }
-        ]
+        ],
+        "description": "GSD: Check for updates on session start"
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/scripts/hooks/run-with-flags.js \"pre:bash:git-push-reminder\" \"scripts/hooks/pre-bash-git-push-reminder.js\" \"strict\""
+          }
+        ],
+        "description": "ECC: Reminder before git push to review changes"
+      },
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/scripts/hooks/run-with-flags.js \"pre:edit-write:suggest-compact\" \"scripts/hooks/suggest-compact.js\" \"standard,strict\""
+          }
+        ],
+        "description": "ECC: Suggest manual compaction at logical intervals"
       }
     ],
     "PostToolUse": [
@@ -17,7 +41,42 @@
             "type": "command",
             "command": "node .claude/hooks/gsd-context-monitor.js"
           }
-        ]
+        ],
+        "description": "GSD: Monitor context window usage"
+      },
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/scripts/hooks/run-with-flags.js \"post:quality-gate\" \"scripts/hooks/quality-gate.js\" \"standard,strict\"",
+            "async": true,
+            "timeout": 30
+          }
+        ],
+        "description": "ECC: Run quality gate checks after file edits"
+      },
+      {
+        "matcher": "Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/scripts/hooks/run-with-flags.js \"post:edit:console-warn\" \"scripts/hooks/post-edit-console-warn.js\" \"standard,strict\""
+          }
+        ],
+        "description": "ECC: Warn about console.log statements after edits"
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/scripts/hooks/run-with-flags.js \"stop:check-console-log\" \"scripts/hooks/check-console-log.js\" \"standard,strict\""
+          }
+        ],
+        "description": "ECC: Check for console.log in modified files"
       }
     ]
   },
