@@ -18,7 +18,10 @@
 ## Tech Stack
 
 - **Testing**: Playwright (`@playwright/test`) with Chromium
-- **MCP**: `@playwright/mcp` — Playwright MCP server for browser automation via MCP protocol
+- **MCP Servers**:
+  - `@playwright/mcp` — Browser automation and testing via MCP
+  - `@21st-dev/magic` — AI-powered React/Tailwind component generation from natural language (needs API key from https://21st.dev/magic/console)
+  - `@_davideast/stitch-mcp` — Google Stitch integration for full-page UI design, screen-to-code, and site scaffolding
 - **Runtime**: Node.js 20, npm
 
 ## UI/UX Skills (ui-ux-pro-max)
