@@ -26,10 +26,15 @@
 ## Tech Stack
 
 - **Testing**: Playwright (`@playwright/test`) with Chromium
-- **MCP Servers** (configured in `.mcp.json`, gitignored):
+- **MCP Servers** (8 servers in `.mcp.json`, gitignored):
   - `@playwright/mcp` — Browser automation and testing
   - `@21st-dev/magic` — AI React/Tailwind component generation
   - `@_davideast/stitch-mcp` — Google Stitch UI design to code
+  - `@upstash/context7-mcp` — Live documentation for 1000+ libraries
+  - `supabase` — Database management, schema, migrations, auth (OAuth on first use)
+  - `vercel` — Deployment monitoring, env vars, build logs (OAuth on first use)
+  - `figma` — Live Figma design access: layers, tokens, styles (OAuth on first use)
+  - `next-devtools-mcp` — Next.js route info, component trees, build errors
 - **Runtime**: Node.js 20, npm
 
 ## Installed Toolkits
@@ -59,6 +64,20 @@ Located in `.claude/skills/security/`:
 - **agentic-actions-auditor** — Review GitHub Actions for vulnerabilities
 - **fp-check** — Validate security findings
 
+### Web Quality Skills — `addyosmani/web-quality-skills`
+Located in `.claude/skills/web-quality/`:
+- **web-quality-audit** — Comprehensive quality review across all categories
+- **performance** — Loading speed, resource optimization, critical rendering path
+- **core-web-vitals** — LCP ≤2.5s, INP ≤200ms, CLS ≤0.1
+- **accessibility** — WCAG 2.1 compliance, screen reader, keyboard navigation
+- **seo** — Technical crawlability, meta elements, JSON-LD schema
+- **best-practices** — Security headers, modern APIs, code quality
+
+### Claude SEO — `AgriciDaniel/claude-seo`
+Located in `.claude/skills/seo/`:
+- 13 sub-skills: seo-audit, seo-page, seo-technical, seo-content, seo-schema, seo-images, seo-sitemap, seo-geo, seo-hreflang, seo-plan, seo-programmatic, seo-competitor-pages, seo-core
+- 6 subagents: seo-content, seo-performance, seo-schema, seo-sitemap, seo-technical, seo-visual
+
 ### UI/UX Pro Max — `nextlevelbuilder/ui-ux-pro-max-skill`
 Located in `.claude/skills/`:
 - banner-design, brand, design, design-system, slides, ui-styling, ui-ux-pro-max
@@ -75,6 +94,8 @@ tests/                    — Playwright test files (*.spec.ts)
 .claude/rules/            — Coding standards and rules
 .claude/skills/ecc/       — Everything Claude Code skills (65+)
 .claude/skills/security/  — Trail of Bits security skills (10)
+.claude/skills/web-quality/ — Lighthouse, a11y, Core Web Vitals, SEO (6)
+.claude/skills/seo/       — Claude SEO deep audit skills (13)
 .claude/skills/           — UI/UX Pro Max skills (7)
 .claude/settings.json     — Merged hooks config (GSD + ECC)
 playwright.config.ts      — Playwright configuration
