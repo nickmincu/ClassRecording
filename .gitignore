@@ -3,5 +3,6 @@ test-results/
 playwright-report/
 blob-report/
 .env
+.mcp.json
 *.log
 dist/
