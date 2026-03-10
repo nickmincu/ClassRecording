@@ -38,6 +38,7 @@
 - **16 agents** in `.claude/agents/` — planner, architect, code-reviewer, security-reviewer, tdd-guide, e2e-runner, etc.
 - **65+ skills** in `.claude/skills/ecc/` — frontend-patterns, api-design, security-review, tdd-workflow, docker-patterns, etc.
 - **40+ commands** in `.claude/commands/` — `/plan`, `/tdd`, `/code-review`, `/build-fix`, `/verify`, etc.
+- **Scripts** in `.claude/scripts/` — hook runners, lib utilities, quality gates
 - **Rules** in `.claude/rules/` — coding standards, git workflow, testing, security
 
 ### Get Shit Done (GSD) — `gsd-build/get-shit-done`
@@ -66,12 +67,16 @@ Located in `.claude/skills/`:
 
 ```
 tests/                    — Playwright test files (*.spec.ts)
-.claude/agents/           — AI agents (ECC)
-.claude/commands/         — Slash commands (ECC + GSD)
+.claude/agents/           — AI agents (16 ECC + 12 GSD)
+.claude/commands/         — Slash commands (40 ECC + 32 GSD)
+.claude/scripts/          — ECC hook runners, lib utilities, quality gates
+.claude/hooks/            — GSD hook scripts (statusline, context monitor)
+.claude/get-shit-done/    — GSD core (bin, templates, workflows, references)
 .claude/rules/            — Coding standards and rules
-.claude/skills/ecc/       — Everything Claude Code skills
-.claude/skills/security/  — Trail of Bits security skills
-.claude/skills/           — UI/UX Pro Max skills
+.claude/skills/ecc/       — Everything Claude Code skills (65+)
+.claude/skills/security/  — Trail of Bits security skills (10)
+.claude/skills/           — UI/UX Pro Max skills (7)
+.claude/settings.json     — Merged hooks config (GSD + ECC)
 playwright.config.ts      — Playwright configuration
 ```
 
