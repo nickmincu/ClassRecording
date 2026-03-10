@@ -1,4 +1,17 @@
-# ClassRecording Project
+# Galaxy of Knowledge — ClassRecording Project
+
+## Project Overview
+
+A single-user web app that records class audio, transcribes it continuously, extracts concepts in near real time, and grows a visual "galaxy of knowledge" graph as new information comes in. Includes live active-learning prompts during recording, post-recording quizzes, and an "Alien Hint" system that gives contextual clues grounded in lecture content.
+
+- **Stack**: Next.js App Router, TypeScript, Tailwind CSS, Supabase, Vercel
+- **Aesthetic**: Dark, elegant, galaxy/constellation theme — glowing nodes, clear clusters, subtle motion, highly usable
+- **Architecture**: Single-user, local-first, no auth/teams/sharing
+- **AI providers**: Behind interfaces so they can be swapped later
+
+## Master Plan
+
+**Read `MASTER_PLAN.md` before starting any new phase.** It contains the full phased execution plan (Phase 0–11), data model, graph rules, active learning rules, page specs, Alien Hint system specs, and acceptance criteria. Work phase by phase, using the tools/skills/agents specified in each phase.
 
 ## Testing Directives (MANDATORY)
 
