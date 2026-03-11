@@ -3,6 +3,10 @@ test-results/
 playwright-report/
 blob-report/
 .env
+.env.local
 .mcp.json
+.next/
+.vercel/
 *.log
+*.tsbuildinfo
 dist/

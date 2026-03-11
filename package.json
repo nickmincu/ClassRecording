@@ -1,16 +1,14 @@
 {
   "name": "classrecording",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "test": "playwright test",
-    "test:headed": "playwright test --headed",
-    "test:report": "playwright show-report"
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:report": "npx playwright show-report"
   },
-  "keywords": [],
-  "author": "",
+  "description": "Galaxy of Knowledge — record class audio, transcribe, extract concepts, grow a visual knowledge graph",
+  "author": "nickmincu",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "@playwright/mcp": "^0.0.68",
     "@playwright/test": "^1.58.2"
