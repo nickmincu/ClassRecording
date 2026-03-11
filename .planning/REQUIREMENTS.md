@@ -131,13 +131,71 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| (Populated by roadmap) | | |
+| UI-01 | Phase 1 | Pending |
+| UI-02 | Phase 1 | Pending |
+| UI-04 | Phase 1 | Pending |
+| UI-07 | Phase 1 | Pending |
+| UI-08 | Phase 1 | Pending |
+| GRAPH-01 | Phase 2 | Pending |
+| GRAPH-02 | Phase 2 | Pending |
+| GRAPH-03 | Phase 2 | Pending |
+| GRAPH-04 | Phase 2 | Pending |
+| GRAPH-05 | Phase 2 | Pending |
+| GRAPH-06 | Phase 2 | Pending |
+| GRAPH-07 | Phase 2 | Pending |
+| GRAPH-08 | Phase 2 | Pending |
+| GRAPH-09 | Phase 2 | Pending |
+| UI-03 | Phase 2 | Pending |
+| UI-05 | Phase 2 | Pending |
+| UI-06 | Phase 2 | Pending |
+| NAV-01 | Phase 2 | Pending |
+| AUD-01 | Phase 3 | Pending |
+| AUD-02 | Phase 3 | Pending |
+| AUD-03 | Phase 3 | Pending |
+| AUD-04 | Phase 3 | Pending |
+| AUD-05 | Phase 3 | Pending |
+| AUD-06 | Phase 3 | Pending |
+| EXT-01 | Phase 3 | Pending |
+| EXT-02 | Phase 3 | Pending |
+| EXT-03 | Phase 3 | Pending |
+| EXT-04 | Phase 3 | Pending |
+| NAV-02 | Phase 3 | Pending |
+| LEARN-01 | Phase 4 | Pending |
+| LEARN-02 | Phase 4 | Pending |
+| LEARN-03 | Phase 4 | Pending |
+| LEARN-04 | Phase 4 | Pending |
+| LEARN-05 | Phase 4 | Pending |
+| HINT-01 | Phase 4 | Pending |
+| HINT-02 | Phase 4 | Pending |
+| HINT-03 | Phase 4 | Pending |
+| HINT-04 | Phase 4 | Pending |
+| HINT-05 | Phase 4 | Pending |
+| HINT-06 | Phase 4 | Pending |
+| QUIZ-01 | Phase 4 | Pending |
+| QUIZ-02 | Phase 4 | Pending |
+| QUIZ-03 | Phase 4 | Pending |
+| QUIZ-04 | Phase 4 | Pending |
+| QUIZ-05 | Phase 4 | Pending |
+| QUIZ-06 | Phase 4 | Pending |
+| NAV-03 | Phase 4 | Pending |
+| NODE-01 | Phase 5 | Pending |
+| NODE-02 | Phase 5 | Pending |
+| NODE-03 | Phase 5 | Pending |
+| NODE-04 | Phase 5 | Pending |
+| NODE-05 | Phase 5 | Pending |
+| REV-01 | Phase 5 | Pending |
+| REV-02 | Phase 5 | Pending |
+| REV-03 | Phase 5 | Pending |
+| REV-04 | Phase 5 | Pending |
+| REV-05 | Phase 5 | Pending |
+| NAV-04 | Phase 5 | Pending |
+| NAV-05 | Phase 5 | Pending |
 
 **Coverage:**
-- v1 requirements: 44 total
-- Mapped to phases: 0
-- Unmapped: 44
+- v1 requirements: 59 total (note: original count of 44 was a manual undercount; actual count is 59 across 10 categories)
+- Mapped to phases: 59
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-10*
-*Last updated: 2026-03-10 after initial definition*
+*Last updated: 2026-03-10 after roadmap creation — full traceability populated*
